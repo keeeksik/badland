@@ -13,7 +13,8 @@ namespace Player
         }
         public void Jump(Rigidbody2D rb, float jumpForce)
         {
-            rb.AddForce(Vector2.up * jumpForce);
+            //rb.AddForce(Vector2.up * jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
 }

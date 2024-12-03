@@ -9,7 +9,7 @@ namespace Core
         [field: SerializeField] public float speed { get; private set; }
         [field: SerializeField] public float jumpForce { get; private set; }
 
-        public Rigidbody2D rb;
+        [SerializeField] public Rigidbody2D rb;
 
 
 
